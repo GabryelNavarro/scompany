@@ -8,6 +8,15 @@
     font-family: 'Principal';
     src: url("font/Exo_2/Exo2-Italic-VariableFont_wght.ttf");
 }
+body {
+   margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, black, #0a0a0a, #101010, #141414);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
 
 nav{
     position: fixed;
@@ -15,7 +24,7 @@ nav{
 
     
 }
-/* rgba(26, 26, 26, 0.315 */
+    
 .div-logo-empresa{
     left: 0%;
     position: fixed;
@@ -77,13 +86,78 @@ nav{
 }
 
 
-body {
-    margin: 0;
-    height: 200vh; /* altura extra para permitir scroll */
-    background-image: linear-gradient(to bottom, black, #0a0a0a, #101010, #141414);
 
-    background-attachment: scroll;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.div-conteudo_texto{
+    position: relative;
+    margin-top: 15%;
+    margin-left: 200px;
+     width: 34%;
+ 
    
+   
+}
+.div-conteudo_texto h1{
+ color: white;
+font-family: monospace;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-size: 32pt;
+
+}
+.div-mark{
+    margin-left: 800px;
+    margin-top: -290px;
+   
+}
+.div-conteudo_texto p{
+    color: white;
+    margin-top: 25px;
+    font-family: Principal;
+    letter-spacing: 2px;
+    font-size: 12pt;
+
+}
+/* rgba(26, 26, 26, 0.436); */
+main{
+  
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.648),rgba(26, 26, 26, 0.436));
+  padding-bottom: 5px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.181);
+
+
+  
+}
+.div-botao{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    
+}
+.botao{
+    width: 380px;
+    height: 40px;
+    font-family: monospace;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    background-color: #028cbd;
+    border-radius: 20px 5px 20px;
+    font-size: 16pt;
+    border: none;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* sombra leve */
+    will-change: transform;
+     animation: flutuar 3s ease-in-out infinite;
+}
+.botao:hover {
+    transform: translateY(-10px) scale(1.03); /* sobe e dá um zoom sutil */
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #028cbd;;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+@keyframes flutuar {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
